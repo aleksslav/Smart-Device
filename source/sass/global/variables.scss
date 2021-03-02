@@ -1,0 +1,21 @@
+$font-basic: "PTMono", "Arial", sans-serif;
+$font-special: "RobotoCondensed", "Arial", sans-serif;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1610px;
+
+
+$mobile-width-only: 767px;
+$tablet-width-only: 1023px;
+
+$basic-white: #ffffff;
+$basic-black: #000000;
+$basic-dove-gray: #666666;
+$basic-gable-green: #1B2D37;
+$basic-dodger-blue: #00B2FF;
+$basic-alabaster: #FAFAFA;
+$basic-silver: #CDCDCD;
+$basic-gallery: #EBEBEB;
+
+$basic-gable-green-05: fade($basic-gable-green, 50%);

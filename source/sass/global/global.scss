@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-width: $mobile-width;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: $font-basic;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: $basic-dove-gray;
+
+  background-color: $basic-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

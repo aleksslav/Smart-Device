@@ -1,0 +1,16 @@
+.social {
+  @include reset-list;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.social__link svg {
+  fill: $basic-silver;
+}
+
+.social__item {
+  margin-right: 15px;
+}

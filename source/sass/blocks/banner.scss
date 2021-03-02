@@ -1,0 +1,137 @@
+.banner {
+  position: relative;
+  padding: 200px 43% 30px 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 99px 0 30px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 223px 0 30px 0;
+  }
+}
+
+
+
+.banner h2 {
+  @include reset-list;
+  margin: 20px 0 27px 42px;
+  font-family: $font-special;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 7px 186px 29px 65px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 7px 10px 29px -2px;
+  }
+}
+
+.banner p {
+  @include reset-list;
+  position: relative;
+  margin: 0 5% 45px 16.1%;
+  font-family: $font-basic;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: -94px;
+    width: 66px;
+    height: 2px;
+    background-color: $basic-white;
+
+    @media (max-width: $tablet-width-only) {
+      top: 17px;
+      left: -47px;
+      width: 33px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      top: 14px;
+      left: -49px;
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 17% 45px 16.2%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 5% 31px 17.2%;
+  }
+}
+
+.banner a {
+  @include reset-list;
+  margin: 39px 14px 12px 7px;
+  align-self: flex-start;
+  font-family: $font-basic;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+.banner__button {
+  margin: 0 3% 93px 16.1%;
+  width: 100%;
+  font-family: $font-special;
+  padding: 15px 19px 17px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-dodger-blue;
+  border: 1px solid $basic-dodger-blue;
+
+  @media (max-width: $tablet-width-only) {
+    width: 379px;
+    margin: 11px 29% 93px 16%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 0;
+    margin: 11px 0;
+    width: 100%;
+    padding: 15px 19px 14px 20px;
+
+    &::before {
+      content: "Бесплатная консультация";
+      font-size: initial;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+

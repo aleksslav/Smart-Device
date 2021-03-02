@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__title-container h3 {
+  @include reset-list;
+  font-family: $font-special;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-gable-green;
+  margin-bottom: 24px;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-right: 2px;
+  font-family: $font-basic;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-gable-green;
+}
+
+.contacts__item span {
+  color: $basic-gable-green;
+  opacity: 0.5;
+}
+
+.contacts__item a {
+  color: $basic-gable-green;
+  opacity: 0.5;
+}

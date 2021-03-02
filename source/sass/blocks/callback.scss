@@ -1,0 +1,250 @@
+.callback {
+  font-family: $font-special;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: $basic-gable-green;
+  background-color: $basic-dodger-blue;
+  background-image: url("../img/airplane-triangles.svg");
+  background-repeat: no-repeat;
+  background-size: 1890px 764px;
+  background-position: 103px -59px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/airplane-triangles.svg");
+  }
+
+  @media (max-width: $tablet-width-only) {
+    justify-content: center;
+    padding: 70px 0 75px 0;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.callback__wrapper {
+  @include wrapper;
+  display: flex;
+  justify-content: flex-end;
+  padding: 70px 20px 91px 20px;
+  background-image: url("../img/airplane.png");
+  background-repeat: no-repeat;
+  background-size: 518px 285px;
+  background-position: calc(60% - 600px) 163px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/airplane-2x.png");
+  }
+
+  @media (max-width: $tablet-width-only) {
+    justify-content: center;
+    padding: 70px 0 75px 0;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.callback__container {
+  width: 593px;
+  padding: 22px 10px 22px 13px;
+  margin-right: 12.1%;
+
+  @media (max-width: $tablet-width-only) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: auto;
+    padding: 51px 16px 50px 16px;
+    background-color: $basic-white;
+    box-shadow: none;
+  }
+}
+
+.callback__container b {
+  @include reset-list;
+  margin: 0 0 10px -3px;
+  font-family: $font-special;
+  text-align: left;
+  display: block;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+
+.callback__container p {
+  @include reset-list;
+  margin: 0 0 51px 1px;
+  font-family: $font-basic;
+  text-align: left;
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 19px;
+  }
+}
+
+.callback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.callback__form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 133px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
+}
+
+.callback__form-wrapper input[type="text"],
+.callback__form-wrapper input[type="tel"] {
+  width: 270px;
+  padding: 11px 16px 16px;
+  margin: 0 0 39px 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 18px 16px;
+  }
+}
+
+.callback__form-wrapper textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px 8px 16px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 18px 16px;
+  }
+}
+
+
+.callback__button-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.callback__button {
+  max-width: 270px;
+  padding: 12px 10px 14px;
+  border: 1px solid $basic-white;
+  align-items: flex-start;
+
+  @media (max-width: $tablet-width-only) {
+    min-width: 249px;
+    padding: 20px 10px 18px 10px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
+}
+
+.callback__button-wrapper input[type="checkbox"] + label {
+  font-family: $font-basic;
+  text-align: left;
+  position: relative;
+  display: block;
+  padding: 6px 0 0 70px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: 0.8;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+    padding-top: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 35px;
+    padding-top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 39px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $basic-white;
+
+    @media (max-width: $tablet-width) {
+      top: 15px;
+      left: 12px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 1px;
+      left: 0;
+    }
+  }
+}
+

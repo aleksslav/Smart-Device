@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  font-family: $font-special;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  width: 100%;
+  padding: 17px 25px 15px 21px;
+  max-width: 407px;
+  margin: 0 auto;
+  border: 1px solid $basic-white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-dodger-blue;
+    border: 1px solid $basic-dodger-blue;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}

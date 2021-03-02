@@ -1,0 +1,44 @@
+.page-footer {
+  box-sizing: border-box;
+  font-family: $font-basic;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-gable-green;
+  background-color: $basic-alabaster;
+  padding: 65px 0 10px 0;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+  padding: 0 20px 59px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0 25px 0 22px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 16px 0 17px;
+  }
+}
+
+.page-footer__base {
+  margin: 0 4.9% 0 4.9%;
+}
+
+.page-footer__base p {
+  display: none;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0 4.98% 0 8.2%;
+}

@@ -1,0 +1,108 @@
+.advantages {
+  font-family: $font-basic;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-dove-gray;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.advantages__wrapper {
+  @include wrapper;
+  padding: 111px 20px 58px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0 25px 0 22px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 16px 0 17px;
+  }
+}
+
+
+.advantages__list {
+  @include reset-list;
+  position: relative;
+  display: grid;
+  grid-template-columns: 36.31% 36.31%;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantages__item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 42px 66px 44px;
+  border: 1px solid $basic-gallery;
+  cursor: pointer;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: $basic-dodger-blue;
+  }
+}
+
+.advantages__item-icon {
+  fill: $basic-dodger-blue;
+  transition: all 0.2s;
+}
+
+.advantages__item h3 {
+  @include reset-list;
+  font-family: $font-special;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-dodger-blue;
+  transition: all 0.2s;
+  margin: 12px 0 17px 0;
+}
+
+
+.advantages__item p {
+  @include reset-list;
+  font-family: $font-basic;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.2s;
+  color: $basic-dodger-blue;
+}
+
+.advantages__item:hover,
+.advantages__item:focus {
+  border-color: $basic-dodger-blue;
+  background-color: $basic-dodger-blue;
+  transition: 0.6s linear;
+}
+
+.advantages__item:hover h3,
+.advantages__item:focus h3,
+.advantages__item:hover p,
+.advantages__item:focus p {
+  color: $basic-white;
+  transition: all 0.2s;
+}
+
+.advantages__item:hover .advantages__item-icon,
+.advantages__item:focus .advantages__item-icon {
+  fill: $basic-white;
+  transition: all 0.2s;
+}
