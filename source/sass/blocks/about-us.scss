@@ -114,18 +114,16 @@
 
   @media (max-width: $tablet-width-only) {
     margin: 0 0 19px 3px;
-    -webkit-line-clamp: 4;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    display: box;
+    box-orient: vertical;
     overflow: hidden;
   }
 
   @media (max-width: $mobile-width-only) {
     margin: 0 0 44px 3px;
-    -webkit-line-clamp: 8;
+    line-clamp: 8;
     line-height: 21.5px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
     overflow: hidden;
 
     &:last-of-type {
@@ -134,12 +132,36 @@
   }
 }
 
-.about-us__button {
+.about-us__description a {
+  display: block;
+  font-family: $font-special;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid $basic-white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
   margin: 19px 0 19px 0;
   padding: 13px 25px 14px 21px;
   width: 180px;
   color: $basic-dodger-blue;
   border-color: $basic-dodger-blue;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-dodger-blue;
+    border: 1px solid $basic-dodger-blue;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width-only) {
     margin: 24px 3px;

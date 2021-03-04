@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page-body">
+  <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <h1 class="visually-hidden">Печатные платы</h1>
@@ -29,7 +29,7 @@
                 <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
               </svg>
               <a class="main-nav__link main-nav__link--mail" href="mailto:info@sd.ru">
-                <span>info@sd.ru</span>
+                info@sd.ru
               </a>
             </li>
             <li class="main-nav__item">
@@ -37,7 +37,7 @@
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
               <a class="main-nav__link main-nav__link--phone" href="tel:+74950005252">
-                <span>+7 (495) 000 52 52</span>
+                +7 (495) 000 52 52
               </a>
             </li>
           </ul>
@@ -49,7 +49,7 @@
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="banner__button button" href="#callback">
-            <span>Получить бесплатную консультацию</span>
+            Получить бесплатную консультацию
           </a>
           <a class="banner__scroll" href="#advantages">Скролл вниз</a>
         </section>
@@ -113,7 +113,7 @@
               <p class="about-us__text">
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </p>
-              <a href="#" class="about-us__button button">
+              <a href="#">
                 Подробнее
               </a>
             </div>
@@ -134,6 +134,7 @@
                   <source type="image/webp" srcset="img/product-desktop.webp 1x, img/product-desktop-2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/product-mobile.png 1x, img/product-mobile-2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/product-tablet.png 1x, img/product-tablet-2x.png 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
                   <img src="img/product-desktop.png" srcset="img/product-desktop-2x.png 2x" width="370" height="620" alt="Печатная плата">
                 </picture>
               </a>
@@ -147,6 +148,7 @@
                   <source type="image/webp" srcset="img/mount-desktop.webp 1x, img/mount-desktop-2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mount-mobile.png 1x, img/mount-mobile-2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/mount-tablet.png 1x, img/mount-tablet-2x.png 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
                   <img src="img/mount-desktop.png" srcset="img/mount-desktop-2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
                 </picture>
               </a>
@@ -160,6 +162,7 @@
                   <source type="image/webp" srcset="img/light-desktop.webp 1x, img/light-desktop-2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/light-mobile.png 1x, img/light-mobile-2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/light-tablet.png 1x, img/light-tablet-2x.png 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
                   <img src="img/light-desktop.png" srcset="img/light-desktop-2x.png 2x" width="370" height="620" alt="Светотехники">
                 </picture>
               </a>
@@ -310,6 +313,6 @@
       </form>
     </div>
     <script src="js/vendor.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

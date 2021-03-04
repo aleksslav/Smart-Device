@@ -133,6 +133,16 @@
   margin-right: 2px;
   margin-top: 4px;
 
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-dodger-blue;
+    border: 1px solid $basic-dodger-blue;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
   @media (max-width: $tablet-width-only) {
     display: none;
   }
