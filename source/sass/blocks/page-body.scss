@@ -11,3 +11,10 @@
   flex-direction: column;
   box-sizing: border-box;
 }
+
+.page-overlay {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+}

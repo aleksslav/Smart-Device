@@ -20,6 +20,10 @@
   text-transform: uppercase;
   color: $basic-gable-green;
   margin-bottom: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 31px;
+  }
 }
 
 .contacts__list {
@@ -41,4 +45,12 @@
 .contacts__item a {
   color: $basic-gable-green;
   opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }

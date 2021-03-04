@@ -18,11 +18,11 @@
   flex-direction: column;
 
   @media (max-width: $tablet-width-only) {
-    padding: 0 25px 0 22px;
+    padding: 20px 24px 70px 26px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 0 16px 0 17px;
+    padding: 20px 15px 56px 15px;
   }
 }
 
@@ -36,6 +36,18 @@
   font-style: normal;
   color: $basic-white;
   text-align: left;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 29px 13% 50px 0.1%;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 29px 2% 43px 2.9%;
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .services__list {
@@ -48,6 +60,18 @@
 
   @media (max-width: 1609px) {
     grid-template-columns: 30% 30% 30%;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 38px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 22px;
   }
 }
 
@@ -66,6 +90,14 @@
     background: url("../img/icon-square-link.svg") no-repeat $basic-dodger-blue;
     background-position: center;
   }
+
+  @media (max-width: $tablet-width-only) {
+    &::after {
+      content: "";
+      bottom: 8px;
+      right: -1px;
+    }
+  }
 }
 
 .services__link h3 {
@@ -79,6 +111,29 @@
   top: 52px;
   left: 44px;
   max-width: 170px;
+
+  @media (max-width: $tablet-width-only) {
+    top: 41px;
+    left: 44px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    top: 21px;
+    left: 35px;
+  }
+}
+
+.services__link--tablet h3 {
+  @media (max-width: $tablet-width-only) {
+    top: 50px;
+    left: 44px;
+  }
+
+
+  @media (max-width: $mobile-width-only) {
+    top: 30px;
+    left: 35px;
+  }
 }
 
 .services__item img {
@@ -87,6 +142,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    height: 256px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    height: 256px;
+  }
 }
 
 .services__item:hover img,
@@ -98,4 +163,3 @@
 .services__item:focus .services__link::after {
   opacity: 0.6;
 }
-

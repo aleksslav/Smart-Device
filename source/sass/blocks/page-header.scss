@@ -10,34 +10,36 @@
   flex-direction: column;
   box-sizing: border-box;
   min-height: 878px;
-  background-image: url("../img/top-mask.png"), url("../img/boards-desktop.png"), url("../img/group17.svg");
+  background-image: url("../img/top-mask.png"), url("../img/boards-desktop.png"), url("../img/triangle-top.svg");
   background-size: cover, 705px 515px, 671px 641px;
-  background-position: center top,calc(40% + 551px) 259px,calc(50% + 405px) 116px;
+  background-position: center top, calc(40% + 551px) 259px, calc(50% + 405px) 116px;
   background-repeat: no-repeat, no-repeat, no-repeat;
 
   overflow: hidden;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/top-mask-2x.png"), url("../img/boards-desktop-2x.png"), url("../img/group17.svg");
+    background-image: url("../img/top-mask-2x.png"), url("../img/boards-desktop-2x.png"), url("../img/triangle-top.svg");
   }
 
   @media (max-width: $tablet-width-only) {
-    background-image: url("../img/boards-tablet.png"), url("../img/group17.svg");
-    background-size: 465px 340px, 520px auto;
-    background-position: 511px 113px,443px -34px;
+    min-height: 686px;
+    background-image: url("../img/top-mask.png"), url("../img/boards-tablet.png"), url("../img/triangle-top.svg");
+    background-size: cover, 465px 340px, 520px auto;
+    background-position: center top, 511px 113px, 443px -34px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/boards-tablet-2x.png"), url("../img/group17.svg");
+      background-image: url("../img/top-mask-2x.png"), url("../img/boards-tablet-2x.png"), url("../img/triangle-top.svg");
     }
   }
 
   @media (max-width: $mobile-width-only) {
-    background-image: url("../img/boards-mobile.png"), url("../img/group17.svg");
-    background-size: 301px 220px, 520px 478px;
-    background-position: 25px 92px,144px -43px;
+    min-height: 647px;
+    background-image: url("../img/top-mask.png"), url("../img/boards-mobile.png"), url("../img/triangle-top.svg");
+    background-size: cover, 301px 220px, 520px 478px;
+    background-position: center top, 25px 92px, 144px -43px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/boards-mobile-2x.png"), url("../img/group17.svg");
+      background-image: url("../img/top-mask-2x.png"), url("../img/boards-mobile-2x.png"), url("../img/triangle-top.svg");
     }
   }
 }
@@ -48,11 +50,15 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 1610px) {
+    margin: 0;
+  }
+
   @media (max-width: $tablet-width-only) {
     padding: 0 25px 0 22px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 0 16px 0 17px;
+    padding: 0 15px 0 16px;
   }
 }

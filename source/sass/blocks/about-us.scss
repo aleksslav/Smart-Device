@@ -16,11 +16,11 @@
   flex-direction: column;
 
   @media (max-width: $tablet-width-only) {
-    padding: 0 25px 0 22px;
+    padding: 20px 25px 58px 22px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 0 16px 0 17px;
+    padding: 20px 12px 55px 15px;
   }
 }
 
@@ -37,7 +37,7 @@
     width: 210px;
     height: 317px;
     top: 25px;
-    left: 9.87%;
+    left: 12.4%;
     background-image: url("../img/2005.png");
     background-size: 113px 308px;
     background-position: calc(20% - 10px);
@@ -45,6 +45,36 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/2005-2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0 1% 0 26.1%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 251px;
+      height: 361px;
+      top: 38px;
+      left: -1.13%;
+      background-image: url("../img/2005.png");
+      background-size: 131px 349px;
+      background-position: calc(20% - 10px);
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/2005-2x.png");
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+
+    &::before {
+      content: "";
+      background-image: none;
     }
   }
 }
@@ -58,6 +88,18 @@
   font-style: normal;
   color: $basic-dove-gray;
   margin: 20px 0;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 36px 0 26px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 28px;
+    line-height: 39px;
+    margin: 13px 0 22px 0;
+  }
 }
 
 .about-us__description p {
@@ -69,6 +111,27 @@
   font-style: normal;
   color: $basic-dove-gray;
   margin: 0 0 20px 0;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 0 19px 3px;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 44px 3px;
+    -webkit-line-clamp: 8;
+    line-height: 21.5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .about-us__button {
@@ -77,4 +140,12 @@
   width: 180px;
   color: $basic-dodger-blue;
   border-color: $basic-dodger-blue;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 24px 3px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 31px 3px 10px 3px;
+  }
 }

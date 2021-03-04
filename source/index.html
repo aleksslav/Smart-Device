@@ -48,10 +48,10 @@
         <section class="banner">
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="banner__button button" type="button">
+          <a class="banner__button button" href="#callback">
             <span>Получить бесплатную консультацию</span>
-          </button>
-          <a href="#">Скролл вниз</a>
+          </a>
+          <a class="banner__scroll" href="#advantages">Скролл вниз</a>
         </section>
       </div>
     </header>
@@ -61,7 +61,7 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages__wrapper">
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--watch">
                 <svg class="advantages__item-icon advantages__item-icon--watch" width="29" height="35">
                   <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
                 </svg>
@@ -71,7 +71,7 @@
                   заказы плат и комплектующих в самые короткие сроки
                 </p>
               </li>
-              <li class="advantages__item advantages__item--pr13">
+              <li class="advantages__item advantages__item--people">
                 <svg class="advantages__item-icon advantages__item-icon--people" width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#icon-hired"></use>
                 </svg>
@@ -82,22 +82,22 @@
                   такими компаниями обеспичивает хорошее качество нашей продукции.
                 </p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--incognita">
                 <svg class="advantages__item-icon advantages__item-icon--incognita" width="36" height="35">
                   <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
                 </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>
-                  По желанию клиента &nbsp;мы обеспечиваем полную конфеденциальность.
+                  По желанию клиента  мы обеспечиваем полную конфеденциальность.
                 </p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--price">
                 <svg class="advantages__item-icon advantages__item-icon--price" width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
                 <p>
-                  Мы &nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+                  Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
                 </p>
               </li>
             </ul>
@@ -110,7 +110,7 @@
               <p>
                 Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
               </p>
-              <p>
+              <p class="about-us__text">
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </p>
               <a href="#" class="about-us__button button">
@@ -152,7 +152,7 @@
               </a>
             </li>
             <li class="services__item">
-              <a href="#" class="services__link">
+              <a href="#" class="services__link services__link--tablet">
                 <h3>Комплектующие для светотехники</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/light-mobile.webp 1x, img/light-mobile-2x.webp 2x">
@@ -167,20 +167,20 @@
           </ul>
         </div>
       </section>
-      <section class="callback">
+      <section class="callback" id="callback">
         <div class="callback__wrapper">
           <div class="callback__container">
             <h2 class="visually-hidden">Обратная связь</h2>
-            <b class="callback__title">Остались вопросы? Задайте их нам!</b>
-            <p class="callback__text">Мы проконсультируем Вас бесплатно</p>
+            <b>Остались вопросы? Задайте их нам!</b>
+            <p>Мы проконсультируем Вас бесплатно</p>
             <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
               <div class="callback__form-wrapper">
-                <label class="visually-hidden" for="call-name">Имя</label>
-                <input type="text" name="user-name" id="call-name" placeholder="Имя" required>
-                <label class="visually-hidden" for="call-phone">Телефон</label>
-                <input type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
-                <label class="visually-hidden" for="call-question">Ваш вопрос</label>
-                <textarea name="question" id="call-question" placeholder="Ваш вопрос" required></textarea>
+                <label class="visually-hidden" for="callback-name">Имя</label>
+                <input type="text" name="user-name" id="callback-name" placeholder="Имя" required>
+                <label class="visually-hidden" for="callback-phone">Телефон</label>
+                <input type="tel" name="user-phone" id="callback-phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
+                <label class="visually-hidden" for="callback-letter">Ваш вопрос</label>
+                <textarea name="user-question" id="callback-letter" placeholder="Ваш вопрос" required></textarea>
               </div>
               <div class="callback__button-wrapper">
                 <button class="callback__button button" type="submit">Задать вопрос</button>
@@ -288,5 +288,28 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay page-overlay">
+      <form class="modal-overlay__form form" action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="form__wrapper">
+          <label class="visually-hidden" for="modal-name">Имя</label>
+          <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required>
+          <label class="visually-hidden" for="modal-phone">Телефон</label>
+          <input type="tel" name="modal-phone" id="modal-phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
+          <label class="visually-hidden" for="modal-letter">Ваш вопрос</label>
+          <textarea name="modal-question" id="modal-letter" placeholder="Ваш вопрос" required></textarea>
+        </div>
+        <div class="form__button-wrapper">
+          <button class="form__button button" type="submit">Отправить</button>
+          <input class="visually-hidden" type="checkbox" name="accept" id="accept-modal" required>
+          <label for="accept-modal">Я согласен на обработку &nbsp;персональных данных</label>
+        </div>
+        <button class="modal-overlay__close">Закрыть окно</button>
+      </form>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

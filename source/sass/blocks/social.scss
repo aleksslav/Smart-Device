@@ -5,12 +5,30 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @media (max-width: $tablet-width-only) {
+    @include reset-list;
+  }
 }
 
 .social__link svg {
   fill: $basic-silver;
+
+  &:hover {
+    fill: $basic-dodger-blue;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .social__item {
   margin-right: 15px;
+
+  @media (max-width: $tablet-width-only) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

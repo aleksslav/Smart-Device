@@ -1,6 +1,10 @@
 .footer-nav {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 0 33px 0;
+  }
 }
 
 .footer-nav__title-container {
@@ -20,6 +24,10 @@
   text-transform: uppercase;
   color: $basic-gable-green;
   margin: 0 0 24px 3px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 24px 0;
+  }
 }
 
 .footer-nav__list {
@@ -34,10 +42,17 @@
   column-width: 249px;
   column-gap: 60px;
 
+  @media (max-width: 1488px) {
+    column-width: 190px;
+    column-gap: 15px;
+    margin-bottom: 15px;
+  }
+
   @media (max-width: $tablet-width) {
     column-count: 1;
     column-width: none;
     column-gap: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -50,4 +65,12 @@
 .footer-nav__item a {
   color: $basic-gable-green;
   opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
