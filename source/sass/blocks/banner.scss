@@ -30,6 +30,7 @@
   font-weight: 700;
   font-style: normal;
   color: $basic-white;
+  z-index: 2;
 
   @media (max-width: $tablet-width-only) {
     font-size: 60px;
@@ -54,6 +55,7 @@
   font-weight: 400;
   font-style: normal;
   color: $basic-white;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -79,7 +81,7 @@
   @media (max-width: $tablet-width-only) {
     font-size: 18px;
     line-height: 28px;
-    margin: 0 17% 45px 16.2%;
+    margin: 0 32% 45px 16.2%;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -149,5 +151,29 @@
 
   @media (max-width: $tablet-width-only) {
     display: none;
+  }
+}
+
+.banner img {
+  position: absolute;
+  width: 705px;
+  height: 515px;
+  top: 162px;
+  left: calc(40% + 235px);
+  z-index: 1;
+
+  @media (max-width: $tablet-width-only) {
+    width: 465px;
+    height: 340px;
+    top: 32px;
+    left: calc(40% + 200px);
+    right: 138px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 301px;
+    height: 220px;
+    top: 36px;
+    left: calc(25% - 61px);
   }
 }

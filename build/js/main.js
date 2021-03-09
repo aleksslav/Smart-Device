@@ -8,9 +8,6 @@
   var popup = document.querySelector('.modal-overlay');
   var close = popup.querySelector('.modal-overlay__close');
   var form = popup.querySelector('.modal-overlay__form');
-  var callbackName = popup.querySelector('#callback-name');
-  var callbackPhone = popup.querySelector('#callback-phone');
-  var callbackLetter = popup.querySelector('#callback-letter');
   var modalName = popup.querySelector('#modal-name');
   var modalPhone = popup.querySelector('#modal-phone');
   var modalLetter = popup.querySelector('#modal-letter');
@@ -40,15 +37,12 @@
     openPopup();
 
     if (storage.name) {
-      callbackName.value = storage.name;
-      callbackPhone.value = storage.phone;
-      callbackLetter.value = storage.question;
       modalName.value = storage.name;
       modalPhone.value = storage.phone;
-      modalLetter.value = storage.question;
-      question.focus();
+      modalLetter.value = storage.letter;
+      modalLetter.focus();
     } else {
-      userName.focus();
+      modalName.focus();
     }
   });
 
@@ -59,9 +53,6 @@
 
   form.addEventListener('submit', function () {
     if (isStorageSupport) {
-      localStorage.setItem('name', callbackName.value);
-      localStorage.setItem('phone', callbackPhone.value);
-      localStorage.setItem('letter', callbackLetter.value);
       localStorage.setItem('name', modalName.value);
       localStorage.setItem('phone', modalPhone.value);
       localStorage.setItem('letter', modalLetter.value);
@@ -83,23 +74,6 @@
     }
   });
 })();
-
-(function () {
-  var maskedInputs = document.querySelectorAll('input[data-inputmask]');
-
-  var applyMask = function () {
-    Array.prototype.forEach.call(maskedInputs, function (input) {
-      var maskOption = {
-        mask: input.getAttribute('data-inputmask')
-      };
-      IMask(input, maskOption);
-    });
-  };
-
-  applyMask();
-
-})();
-
 
 (function () {
   var accordionItems = document.querySelectorAll('.accordion');
@@ -132,4 +106,22 @@
     hidePane(accordionToggleButton, accordionPane);
     accordionToggleButton.addEventListener('click', toggleAccordion);
   });
+})();
+
+/*eslint-disable*/
+
+(function () {
+  var maskedInputs = document.querySelectorAll('input[data-inputmask]');
+
+  var applyMask = function () {
+    Array.prototype.forEach.call(maskedInputs, function (input) {
+      var maskOption = {
+        mask: input.getAttribute('data-inputmask')
+      };
+      IMask(input, maskOption);
+    });
+  };
+
+  applyMask();
+
 })();

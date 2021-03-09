@@ -51,8 +51,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  color: $basic-gable-green;
-  opacity: 0.5;
   margin: 0 5.1% 0 4.9%;
 
   @media (max-width: $tablet-width-only) {
@@ -67,6 +65,9 @@
 }
 
 .copyright__item {
+  opacity: 0.5;
+  color: $basic-gable-green;
+
   &--01 {
     margin-right: 75px;
   }
@@ -87,5 +88,17 @@
 .copyright__item--only-desktop {
   @media (max-width: $tablet-width-only) {
     display: none;
+  }
+}
+
+.copyright__item--04 a {
+  color: $basic-gable-green;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
