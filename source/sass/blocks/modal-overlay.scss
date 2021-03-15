@@ -8,6 +8,10 @@
     display: block;
     animation: bounce 0.6s;
   }
+
+  &--nojs {
+    display: flex;
+  }
 }
 
 .modal__no-scroll {

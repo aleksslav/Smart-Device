@@ -68,8 +68,18 @@
   line-height: 22px;
   color: $basic-white;
   border: none;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
 
   &::placeholder {
     font-family: $font-basic;
@@ -94,8 +104,17 @@
   color: $basic-white;
   resize: none;
   border: none;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 
   &::placeholder {
     font-family: $font-basic;
@@ -134,7 +153,6 @@
     opacity: 0.6;
   }
 
-
   @media (max-width: $tablet-width-only) {
     min-width: 249px;
     padding: 20px 10px 18px 10px;
@@ -157,6 +175,14 @@
   opacity: 0.8;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 0 10px 0 45px;

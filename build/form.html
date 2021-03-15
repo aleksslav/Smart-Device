@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="интернет-магазин по производству печатных плат smart-device">
+  <title>Интернет-Магазин по производству Печатных Плат Smart-Device</title>
+  <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="modal-overlay modal-overlay--nojs">
+    <form class="modal-overlay__form form" action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <h3>Закажите звонок</h3>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <div class="form__wrapper">
+        <label class="visually-hidden" for="modal-name">Имя</label>
+        <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required="">
+        <label class="visually-hidden" for="modal-phone">Телефон</label>
+        <input type="tel" name="modal-phone" id="modal-phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" title="Введите телефон в формате +7(000)000-00-00, где вместо 0 должна быть цифра:" required="">
+        <label class="visually-hidden" for="modal-letter">Ваш вопрос</label>
+        <textarea name="modal-question" id="modal-letter" placeholder="Ваш вопрос"></textarea>
+      </div>
+      <div class="form__button-wrapper">
+        <button class="form__button button" type="submit">Отправить</button>
+        <input class="visually-hidden" type="checkbox" name="accept" id="accept-modal" required="">
+        <label for="accept-modal">Я согласен на обработку &nbsp;персональных данных</label>
+      </div>
+      <a href="index.html" class="modal-overlay__close">Закрыть окно</a>
+    </form>
+  </div>
+</body>
+</html>

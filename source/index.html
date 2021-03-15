@@ -12,13 +12,12 @@
     <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <!-- правка 09.03.2021 -->
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <h1 class="visually-hidden">Печатные платы</h1>
         <nav class="main-nav">
-          <a class="main-nav__logo" href="#">
+          <a class="main-nav__logo">
             <picture>
               <source media="(max-width: 767px)" srcset="img/icon-logo-no-text.svg">
               <img src="img/icon-logo-text-header.svg" width="202" height="52" alt="Логотип сайта Smart-Device">
@@ -42,7 +41,7 @@
               </a>
             </li>
           </ul>
-          <a href="" class="main-nav__button button">
+          <a href="form.html" class="main-nav__button button">
             Заказать звонок
           </a>
         </nav>
@@ -193,7 +192,7 @@
                 <label class="visually-hidden" for="callback-phone">Телефон</label>
                 <input type="tel" name="user-phone" id="callback-phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
                 <label class="visually-hidden" for="callback-letter">Ваш вопрос</label>
-                <textarea name="user-question" id="callback-letter" placeholder="Ваш вопрос" required></textarea>
+                <textarea name="user-question" id="callback-letter" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="callback__button-wrapper">
                 <button class="callback__button button" type="submit">Задать вопрос</button>
@@ -240,9 +239,9 @@
         </div>
         <div class="page-footer__container">
           <div class="page-footer__footer-nav footer-nav accordion">
-            <div class="footer-nav__title-container">
+            <div class="footer-nav__title-container accordion__title">
               <h3>Разделы сайта</h3>
-              <button class="footer-nav__toggle accordion__toggle" type="button" aria-label="Развернуть/свернуть раздел"></button>
+              <button class="footer-nav__toggle accordion__toggle accordion__toggle--nojs" type="button" aria-label="Развернуть/свернуть раздел"></button>
             </div>
             <ul class="footer-nav__list accordion__pane">
               <li class="footer-nav__item">
@@ -269,9 +268,9 @@
             </ul>
           </div>
           <div class="page-footer__contacts contacts accordion">
-            <div class="contacts__title-container">
+            <div class="contacts__title-container accordion__title">
               <h3>Наш офис</h3>
-              <button class="contacts__toggle accordion__toggle" type="button" aria-label="Развернуть/свернуть раздел"></button>
+              <button class="contacts__toggle accordion__toggle accordion__toggle--nojs" type="button" aria-label="Развернуть/свернуть раздел"></button>
             </div>
             <ul class="contacts__list accordion__pane">
               <li class="contacts__item">
@@ -312,7 +311,7 @@
           <label class="visually-hidden" for="modal-phone">Телефон</label>
           <input type="tel" name="modal-phone" id="modal-phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
           <label class="visually-hidden" for="modal-letter">Ваш вопрос</label>
-          <textarea name="modal-question" id="modal-letter" placeholder="Ваш вопрос" required></textarea>
+          <textarea name="modal-question" id="modal-letter" placeholder="Ваш вопрос"></textarea>
         </div>
         <div class="form__button-wrapper">
           <button class="form__button button" type="submit">Отправить</button>

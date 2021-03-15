@@ -16,6 +16,10 @@
     background-image: url("../img/airplane-triangles.svg");
   }
 
+  @media (max-width: 1630px) {
+    background-position: calc(60% + 100px) -59px;
+  }
+
   @media (max-width: $tablet-width-only) {
     justify-content: center;
     background-image: none;
@@ -42,7 +46,7 @@
   }
 
   @media (max-width: 1202px) {
-    background-position: calc(60% - 500px) 163px;
+    background-position: calc(60% - 538px) 163px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -139,7 +143,7 @@
   padding-bottom: 133px;
 
   @media (max-width: $tablet-width-only) {
-    padding-bottom: 46px;
+    padding-bottom: 48px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -159,8 +163,19 @@
   line-height: 22px;
   color: $basic-white;
   border: none;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
 
   &::placeholder {
     font-family: $font-basic;
@@ -192,8 +207,19 @@
   color: $basic-white;
   resize: none;
   border: none;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
 
   &::placeholder {
     font-family: $font-basic;
@@ -267,6 +293,8 @@
   text-align: left;
   position: relative;
   display: block;
+  width: 100%;
+  height: 100%;
   padding: 6px 0 0 70px;
   font-size: 14px;
   line-height: 16px;
@@ -274,6 +302,14 @@
   opacity: 0.8;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width-only) {
     padding-left: 12.2%;

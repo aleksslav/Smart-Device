@@ -32,13 +32,13 @@
   position: relative;
   display: grid;
   grid-template-columns: 36.31% 36.31%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr min-content;
   justify-content: center;
   gap: 30px;
 
   @media (max-width: $tablet-width-only) {
     grid-template-columns: 47.85% 47.85%;
-    grid-template-rows: 1fr 232px;
+    grid-template-rows: 1fr min-content;
     justify-content: space-between;
     gap: 30px;
   }
@@ -57,7 +57,6 @@
   height: 100%;
   padding: 40px 42px 66px 44px;
   border: 1px solid $basic-gallery;
-  cursor: pointer;
   z-index: 2;
 
   &::before {
@@ -71,7 +70,7 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 23px 18px 21px 29px;
+    padding: 23px 18px 25px 29px;
 
     &::before {
       content: "";
@@ -89,6 +88,11 @@
   @media (max-width: $mobile-width-only) {
     padding: 24px 18px 25px 27px;
   }
+}
+
+.advantages__item--incognita,
+.advantages__item--price {
+  height: 100%;
 }
 
 .advantages__item--price {
@@ -212,6 +216,8 @@
 }
 
 .advantages__item--incognita p {
+  margin: 0 0 41px 0;
+
   @media (max-width: $tablet-width-only) {
     margin: 0 0 20px 0;
   }
@@ -222,6 +228,8 @@
 }
 
 .advantages__item--price p {
+  margin: 0 0 19px 0;
+
   @media (max-width: $tablet-width-only) {
     margin: 0 0 21px 0;
   }

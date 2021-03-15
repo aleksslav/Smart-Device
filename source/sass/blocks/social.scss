@@ -1,6 +1,7 @@
 .social {
   @include reset-list;
   margin-top: 44px;
+  max-width: 240px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

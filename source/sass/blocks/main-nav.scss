@@ -65,6 +65,7 @@
   font-weight: 400;
   font-style: normal;
   color: $basic-white;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 43px;
@@ -77,6 +78,11 @@
   &:focus {
     opacity: 0.3;
   }
+
+  @media (max-width: 1070px) {
+    margin-right: 20px;
+  }
+
 
   @media (max-width: $tablet-width-only) {
     @include reset-list;

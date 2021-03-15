@@ -11,8 +11,8 @@ html {
 body {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-width: $mobile-width;
   min-height: 100vh;
   margin: 0 auto;

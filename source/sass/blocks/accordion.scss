@@ -47,6 +47,12 @@
     }
   }
 
+  .accordion__toggle--nojs {
+    &::before {
+      display: none;
+    }
+  }
+
   .accordion__pane--hidden {
     display: none;
   }

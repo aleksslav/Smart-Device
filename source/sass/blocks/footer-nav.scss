@@ -3,7 +3,8 @@
   flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
-    padding: 0 0 33px 0;
+    padding: 0 18px 3px 15px;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 }
 
@@ -11,6 +12,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    cursor: pointer;
+  }
 }
 
 .footer-nav__title-container h3 {
@@ -43,14 +48,20 @@
   column-gap: 60px;
 
   @media (max-width: 1488px) {
-    column-width: 190px;
-    column-gap: 15px;
+    column-gap: 5px;
     margin-bottom: 15px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 1158px) {
+    column-width: 243px;
+    column-gap: 5px;
+    margin-bottom: 15px;
+    margin-right: -125px;
+  }
+
+  @media (max-width: $tablet-width-only) {
     column-count: 1;
-    column-width: none;
+    column-width: auto;
     column-gap: 0;
     margin-bottom: 0;
   }

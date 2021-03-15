@@ -48,7 +48,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 27px 18px 20px 15px;
+    padding: 27px 0 20px 0;
   }
 }
 
@@ -72,6 +72,7 @@
     flex-direction: column;
     margin: 0 0.6% 0 0.6%;
     align-items: center;
+    padding: 0 18px 0 15px;
   }
 }
 
@@ -102,7 +103,7 @@
   padding: 0 4.98% 0 8.2%;
 
   @media (max-width: 1488px) {
-    padding: 0 2.98% 0 4.2%;
+    padding: 0 1% 0 1%;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -110,6 +111,10 @@
     flex-direction: row;
     padding: 57px 1.9% 43px 0.4%;
     justify-content: space-between;
+  }
+
+  @media (max-width: 790px) {
+    padding: 57px 0.1% 43px 0.1%;
   }
 
   @media (max-width: $mobile-width-only) {

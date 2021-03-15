@@ -46,6 +46,10 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/2005-2x.png");
     }
+
+    @media (max-width: 1202px) {
+      left: 9.4%;
+    }
   }
 
   @media (max-width: $tablet-width-only) {
