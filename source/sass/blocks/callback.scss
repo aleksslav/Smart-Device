@@ -243,6 +243,7 @@
 
 
 .callback__button-wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -262,6 +263,7 @@
   padding: 12px 10px 14px;
   border: 1px solid $basic-white;
   align-items: flex-start;
+  order: 1;
 
   &:hover {
     color: $basic-dodger-blue;
@@ -288,6 +290,21 @@
   }
 }
 
+.callback__button-input {
+  top: 25px;
+  left: 312px;
+
+  @media (max-width: $tablet-width-only) {
+    top: 25px;
+    left: 325px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    top: 120px;
+    left: 0;
+  }
+}
+
 .callback__button-wrapper input[type="checkbox"] + label {
   font-family: $font-basic;
   text-align: left;
@@ -302,6 +319,7 @@
   opacity: 0.8;
   box-sizing: border-box;
   cursor: pointer;
+  order: 2;
 
   &:hover {
     opacity: 0.3;
