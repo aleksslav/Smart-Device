@@ -321,12 +321,9 @@
   cursor: pointer;
   order: 2;
 
-  &:hover {
+  &:hover,
+  &:focus{
     opacity: 0.3;
-  }
-
-  &:focus {
-    opacity: 0.6;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -380,4 +377,9 @@
       left: 3px;
     }
   }
+}
+
+
+.callback__button-wrapper input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 5px $basic-white;
 }

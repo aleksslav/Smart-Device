@@ -1,11 +1,15 @@
 .main-nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 204px 1fr 182px;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
   padding: 33px 5% 0 5%;
-  flex-direction: row;
-  flex-wrap: wrap;
 
   @media (max-width: $tablet-width-only) {
     @include reset-list;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px 0 0 0;
   }
 
@@ -15,9 +19,8 @@
 }
 
 .main-nav__logo {
-  flex-grow: 1;
-
   @media (max-width: $tablet-width-only) {
+    flex-grow: 1;
     padding: 0 0 0 2px;
   }
 
@@ -40,10 +43,11 @@
   display: flex;
   align-items: baseline;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width-only) {
+    justify-content: space-between;
     padding: 7px 0;
   }
 
@@ -146,6 +150,7 @@
 
 .main-nav__button {
   align-self: start;
+  flex-grow: 2;
   width: 180px;
   padding: 13px 25px 14px 21px;
   margin-left: auto;
